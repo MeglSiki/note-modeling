@@ -1,0 +1,5 @@
+name: modeling-note
+title: Modeling
+version: latest
+nav:
+  - modules/ROOT/nav.adoc

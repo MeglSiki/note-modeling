@@ -1,0 +1,5 @@
+= Welcome MeglSiki's Notebook
+
+:navtitle: Welcome
+
+This is MeglSiki's Notebook.

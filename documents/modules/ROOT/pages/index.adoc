@@ -2,4 +2,4 @@
 
 :navtitle: Welcome
 
-This is MeglSiki's Notebook.
+This is MeglSiki's Notebook that about 3D modeling.

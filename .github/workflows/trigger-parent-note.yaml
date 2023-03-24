@@ -1,0 +1,22 @@
+name: Parent note Repository dispatch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Curl Api
+        run: |
+          TOKEN=${{ secrets.ACCESS_TOKEN }}
+
+          curl \
+            -X POST \
+            -H "Authorization: token $TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/MeglSiki/meglsiki-note/dispatches \
+            -d '{"event_type":"push-child-note"}'
